@@ -13,7 +13,65 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form action="/" autocomplete="off">
+    <fieldset>
+      <legend>Personal information</legend>
+      <label>
+        <span></span>Surname:<input type="text" name="surName" maxlength="20" minlength="2"><br>
+      </label>
+      <label>
+        <span>Name:</span><input type="text" name="namePersone" maxlength="12" minlength="2"><br>
+      </label>
+      <label>
+        <span>How old are you?</span><input type="number" size="20px" name="age" maxlength="3" value="12" minlength="2" data-qa="field-value"><br>
+      </label>
+      <label>
+      <span>Full date of bith:</span><input type="date" name="fullDate" maxlength="10"><br>
+      </label>
+      <label>
+      <span>I accept the term of the agreement</span><input type="checkbox" name="accept">
+      </label>
+    </fieldset>
+  </form>
+  <form action="/" autocomplete="off">
+    <fieldset>
+      <legend>Registration</legend>
+      <label>
+      <span>E-mail</span><input type="email" name="email" maxlength="40" placeholder="email@example.com" data-qa="field-placeholder"><br>
+      </label>
+      <label>
+      <span>Password:</span> <input type="password" name="pass" maxlength="20" minlength="8"><br>
+      </label>
+    </fieldset>
+  </form>
+  <form action="/" autocomplete="off">
+    <fieldset>
+      <legend>An interesting fact about you!</legend>
+      <span>Do you love cats?</span><input type="radio" name="accept"><span>Yes</span>
+      <input type="radio" name="accept"><span>No</span><br>
+      <span>What is your favorite color?</span><input type="color" name="favoriteColor"><br>
+      <span>When time do you go to bed?</span><input type="datetime-local" name="fullDate" maxlength="10"><br>
+      <span>What are your favorite brand of cars</span>
+      <select multiple="multiple" class="non">
+        <option>BMV</option>
+        <option>Audi</option>
+        <option>Lada</option>
+      </select><br>
+      <span>How do you rate out work?</span></samp><input type="range" name="rateWork" value="0" min="0" max="10"><br>
+    </fieldset>
+  </form>
+  <form action="/" autocomplete="off">
+    <fieldset>
+    <legend>Additional info:</legend>
+    <label><span>Comments:</span><textarea></textarea></label><br>
+    <span>would you reconmmend us?</span>
+    <select>
+        <option>yes</option>
+        <option>No</option>
+      </select>
+    </fieldset>
+  </form>
+  <form action="/"><input type="submit" nsubmit="onSubmit(event)" value="Submit"></form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
