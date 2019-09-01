@@ -13,3 +13,7 @@ label {
 label + label {
   margin-top: 10px;
 }
+
+.tt {
+  display: inline;
+}

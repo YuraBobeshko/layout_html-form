@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+  <form method="POST" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
     <fieldset class="menu">
       <legend>Personal information</legend>
       <label>
@@ -50,12 +50,14 @@
     </fieldset>
     <fieldset class="menu">
       <legend>An interesting fact about you!</legend>
-      <label>
         <span>Do you love cats?</span>
+      <label class="tt">
         <input type="radio" name="accept">
-        <span>Yes</span>
+        <span>yes</span>
+      </label>
+      <label class="tt">
         <input type="radio" name="accept">
-        <span>No</span><br>
+        <span>No</span>
       </label>
       <label>
         <span>What is your favorite color?</span>
@@ -94,6 +96,5 @@
     </fieldset>
     <input type="submit" nsubmit="onSubmit(event)" value="Submit">
   </form>
-<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
